@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speaker-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented local sound emission"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+speaker-claim-audit = "speaker_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["speaker_claim_audit*"]
